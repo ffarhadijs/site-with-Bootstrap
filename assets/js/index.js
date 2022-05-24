@@ -1,3 +1,17 @@
+// hmburger-menu
+
+let hamburger=document.querySelector('.hamburger')
+let nav=document.querySelector('.nav')
+let xmark=document.querySelector('.bi-x')
+let burger=document.querySelector('.bi-list')
+hamburger.addEventListener('click',()=>{
+nav.classList.toggle('active-burger')
+burger.classList.toggle('deactive')
+xmark.classList.toggle('active')
+
+})
+
+
 // go-to-top
 
 const goUp = document.querySelector(".gototop");

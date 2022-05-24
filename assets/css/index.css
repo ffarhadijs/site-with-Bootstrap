@@ -1,6 +1,51 @@
-a{
+a {
   text-decoration: none;
 }
+
+/*--------------- header --------------*/
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-item {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  header {
+    position: relative;
+  }
+  .active-burger {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+  }
+  .active-burger .nav-item {
+    display: block;
+  }
+  .bi-x {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  .deactive {
+    display: none;
+  }
+}
+
+/*--------------- header --------------*/
 
 /*--------------- slideShow --------------*/
 
@@ -37,17 +82,17 @@ a{
   margin: 10px;
   font-size: 18px;
 }
-.member{
-   border-radius: 1rem;
+.member {
+  border-radius: 1rem;
 }
-.member-img{
-   border-radius: 1rem 1rem 0 0;
+.member-img {
+  border-radius: 1rem 1rem 0 0;
 }
-.member-img img{
-   border-radius: 1rem 1rem 0 0;
+.member-img img {
+  border-radius: 1rem 1rem 0 0;
 }
-.member-info{
-   border-radius:0 0 1rem 1rem;
+.member-info {
+  border-radius: 0 0 1rem 1rem;
 }
 .member:hover .social {
   opacity: 0.6;
@@ -90,8 +135,8 @@ a{
 
 /*--------------- gotoTop --------------*/
 
-.gototop{
-  position:fixed;
+.gototop {
+  position: fixed;
   bottom: 20px;
   right: 30px;
   width: 45px;
@@ -100,14 +145,14 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
 }
-.show{
-visibility: visible;
-opacity: 1;
+.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*--------------- gotoTop --------------*/
