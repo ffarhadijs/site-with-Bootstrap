@@ -49,9 +49,17 @@ a {
 
 /*--------------- slideShow --------------*/
 
-.carousel-item {
-  height: 100vh;
+@media screen and (max-width: 576px) {
+  .carousel-item {
+    height:70vh;
+  }
 }
+@media screen and (min-width:577px) {
+  .carousel-item {
+    height:100vh;
+  }
+}
+
 
 /*--------------- slideShow --------------*/
 
