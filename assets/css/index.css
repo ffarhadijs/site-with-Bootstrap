@@ -20,7 +20,7 @@ a {
   }
   .active-burger {
     position: absolute;
-    top: 45px;
+    top: 42px;
     left: 0;
     right: 0;
     display: flex;
